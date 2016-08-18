@@ -31,18 +31,7 @@ namespace NSwag.Annotations
             ResponseType = responseType;
         }
 
-        /// <summary>Initializes a new instance of the <see cref="ResponseTypeAttribute"/> class.</summary>
-        /// <param name="httpStatusCode">The HTTP status code for which the result type applies.</param>
-        /// <param name="responseType">The JSON result type of the MVC or Web API action method.</param>
-        /// <param name="description">The description of the response.</param>
-        public ResponseTypeAttribute(string httpStatusCode, Type responseType, string description)
-        {
-            HttpStatusCode = httpStatusCode;
-            ResponseType = responseType;
-            Description = description;
-        }
-
-        /// <summary>Gets or sets the HTTP status code for which the result type applies.</summary>
+         /// <summary>Gets or sets the HTTP status code for which the result type applies.</summary>
         public string HttpStatusCode { get; set; }
 
         /// <summary>Gets or sets the JSON result type of the MVC or Web API action method.</summary>
